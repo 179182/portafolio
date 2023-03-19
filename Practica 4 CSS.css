@@ -1,0 +1,61 @@
+*{
+    background-color: rgb(249, 217, 250);
+}
+
+#uno{
+    background-color: rgb(188, 233, 188);
+}
+
+#dos{
+    background-color: rgb(188, 233, 188);
+}
+
+h1, h2, h3{
+    background-color: rgb(188, 233, 188);
+    color: blue;
+}
+
+#titulo1{
+    background-color: rgb(188, 233, 188);
+
+    color: rgb(117, 0, 226);
+}
+
+#link2
+{
+    background-color:  rgb(188, 233, 188);
+    color: rgb(117, 0, 226);
+}
+
+#parrafo1{
+    font-family: Arial, Helvetica, sans-serif;
+    size: 50px;
+    background-color:  rgb(188, 233, 188);
+    color:  rgb(42, 202, 42);;
+}
+
+#parrafo2{
+    font-family: Arial, Helvetica, sans-serif;
+    size: 50px;
+    background-color:  rgb(188, 233, 188);
+    color:  rgb(42, 202, 42);;
+}
+
+p{
+    background-color:  rgb(188, 233, 188);
+}
+
+blockquote{
+    background-color:  rgb(188, 233, 188);
+}
+
+ol{
+    background-color:  rgb(188, 233, 188);
+}
+
+li{
+    background-color:  rgb(188, 233, 188);
+}
+footer{
+    background-color: rgb(249, 217, 250);
+}

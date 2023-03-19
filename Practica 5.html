@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Practica 5</title> 
+            <link rel="stylesheet" href="Practica 5 css.css">
+        </head>
+        <body>
+            <br/><h1 id="titulo1">Servicios de Internet y Telefonia. </h1><br/>
+            <h2 id="sub1">Contrato de servicios.</h2><br/>
+
+            <form method="post" action="" enctype="text/plain"></form>
+            <fieldset>
+            <legend>Datos del cliente.</legend>
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td><label for="nom">Nombre:</label><br/>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre"/></td>
+                        
+                        <td><label for="pa">Apellido paterno:</label><br/>
+                        <input type="text" name="paterno" id="paterno" placeholder="Apellido paterno"/></td>
+                        
+                        <td><label for="ma">Apellido materno:</label><br/>
+                        <input type="text" name="materno" id="materno" placeholder="Apellido materno"/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tipo">Ciudad:</label><br/>
+                            <select size="5" multiple>
+                                <optgroup >
+                                    <option value="1">San Luís Potosi</option>
+                                    <option value="2">Matehuala</option>
+                                    <option value="3">C.d Valles</option>
+                                    <option value="4">Queretaro</option>
+                                    <option value="5">Guanajuato</option>
+                                </optgroup>
+                            </select></td>
+
+                    </tr>
+                </tbody>
+            </table>
+            </fieldset>
+
+            <form method="post" action="" enctype="text/plain"></form>
+            <fieldset>
+            <legend>Servicios a contratar.</legend>
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="talla">Selecciona el servicio a contratar:</label><br/>
+
+                            <input type="checkbox" name="linea" id="linea" value="linea" checked/>
+                            <label for="forma1">Linea telefonica</label> 
+                            
+                            <input type="checkbox" name="forma2" id="forma2" value="tdf" checked/>
+                            <label for="forma2">Servicios de Internet</label><br/>
+                    </tr>
+                </tbody>
+            </table>
+            </fieldset>
+
+            <form method="post" action="" enctype="text/plain"></form>
+            <fieldset>
+            <legend>Forma de pago.</legend>
+            <table border="0" id="tabla3">
+                <tbody >
+                    <tr>
+                        <td>
+                            <label>Elige tu forma de pago:</label><br/>
+
+                            <label for="genero">TDC</label>
+                            <input type="radio" name="tdc" id="tdc" value="t"/><br/>
+                            
+                            <label for="genero">Tarjeta de debito</label>
+                            <input type="radio" name="debito" id="de" value="deb"/><br/>
+
+                            <label for="genero">Pago en Efectivo</label>
+                            <input type="radio" name="Efectivo" id="Efectivo" value="efe"/><br/>
+
+                            <label for="genero">Pago mediante cheque</label>
+                            <input type="radio" name="cheque" id="cheque" value="che"/><br/>
+
+                            <label for="genero">Transferencia bancaria</label>
+                            <input type="radio" name="bancaria" id="bancaria" value="ban"/><br/>
+
+                            <label for="genero">Deposito bancario</label>
+                            <input type="radio" name="Deposito" id="Deposito" value="dep"/><br/>
+
+                            <label for="genero">Pgo en OXXO</label>
+                            <input type="radio" name="oxxo" id="oxxo" value="ox"/><br/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <br/><br/><input type="submit" name="enviar" id="enviar" value="Enviar formulario"/>
+                        <input type="reset" name="borrar" id="borrar" value="Borrar formulario"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            </fieldset>
+            <h2 id="titulo2">
+                Practica 5
+            </h2>
+
+            <h3 id="titulo3">
+                HTML5-CSS
+            </h3>
+
+            <h4 id="titulo3">
+                Primavera 2023
+            </h4>
+        </body>
+    </html>
