@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-SCC">
+        <title>Examen parcial 2</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+        <style>
+            
+           
+            #titulo1{
+                display: block;
+                width: 400px;
+                padding: 20px;
+                border: 1px solid #124;
+                text-align: center;
+                margin: 15px auto;
+                background: rgb(201, 201, 202);
+                -moz-border-radius: 20px;
+                -webkit-border-radius: 20px;
+                border-radius: 20px;
+                position: absolute;
+                font-family: 'Oswald', sans-serif;
+                top: 10px;
+                right: 15px;
+            } 
+            
+               
+            nav{
+                
+                max-width: 250px;
+                margin: auto;
+                background-color: #8f8f8f;
+                font-size: 20px;
+                margin-top: 40px;
+                font-family: 'DynaPuff', cursive;
+            }
+            .menu-horizontal{
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                font-family: 'DynaPuff', cursive;
+            }
+            .menu-horizontal > li > a{
+                display: block;
+                padding: 15px 20px;
+                color: white;
+                text-decoration: none;
+                font-family: 'DynaPuff', cursive;
+            }
+            .menu-horizontal > li:hover{
+                background-color: red;
+                font-family: 'DynaPuff', cursive;
+            }
+            .menu-vertical{
+                position: absolute;
+                display: none;
+                list-style: none;
+                width: 200px;
+                background-color: rgba(235, 3, 3, 0.5);
+                font-family: 'DynaPuff', cursive;
+            }
+            .menu-horizontal li:hover .menu-vertical{
+                display: block;
+                font-family: 'DynaPuff', cursive;
+            }
+            .menu-vertical li:hover{
+                background-color: rgb(0, 195, 255);
+                font-family: 'DynaPuff', cursive;
+            }
+
+            .menu-vertical li a{
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 15px 15px 15px 20px;
+                font-family: 'DynaPuff', cursive;
+            }
+            
+        </style>
+    </head>
+    <body style="background-image: url(https://www.nationalgeographic.com.es/medio/2016/04/21/earthrise_e86698a6.jpg); 
+        background-size: cover; position: static;">
+
+        <h1 id="titulo1">Los misterios del espacio</h1>
+ 
+
+
+        <nav>
+            <ul class="menu-horizontal">
+                <li>
+                    <a>Preguntas frecuentes</a>
+                    <ul class="menu-vertical">
+                        <li><a>¿Estamos solos en el espacio?</a></li>
+                        <li><a>¿La tierra es plana?</a></li>
+                        <li><a></a>¿Hace cuanto se formo el universo?</li>
+                        <li><a></a>¿Al gun dia podremos viajar por el espacio?</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+    </body>
+</html>
