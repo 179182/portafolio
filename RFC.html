@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de datos personales</title>
+  </head>
+  <body>
+    <h1>Ingresa tus datos personales</h1>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+      
+      <label for="apellido-paterno">Apellido paterno:</label>
+      <input type="text" id="apellido-paterno" name="apellido-paterno"><br><br>
+      
+      <label for="apellido-materno">Apellido materno:</label>
+      <input type="text" id="apellido-materno" name="apellido-materno"><br><br>
+      
+      <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+      <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Día">/
+      <input type="number" id="mes" name="mes" min="1" max="12" placeholder="Mes">/
+      <input type="number" id="anio" name="anio" min="1900" max="2023" placeholder="Año"><br><br>
+
+      <button type="button" onclick="generarRFC()">Generar RFC</button><br><br>
+
+      <label for="rfc">RFC:</label>
+      <input type="text" id="rfc" name="rfc" readonly>
+    </form>
+
+    <script>
+      function generarRFC() {
+        let nombre = document.getElementById("nombre").value;
+        let apellidoPaterno = document.getElementById("apellido-paterno").value;
+        let apellidoMaterno = document.getElementById("apellido-materno").value;
+        let dia = document.getElementById("dia").value;
+        let mes = document.getElementById("mes").value;
+        let anio = document.getElementById("anio").value;
+
+        let rfc = `${nombre.charAt(0)}${apellidoPaterno.charAt(0)}${apellidoMaterno.charAt(0)}${anio.slice(-2)}${mes.padStart(2, '0')}${dia.padStart(2, '0')}`;
+        document.getElementById("rfc").value = rfc.toUpperCase();
+      }
+    </script>
+  </body>
+</html>
