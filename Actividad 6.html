@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>APIs web en acción</title>
+    <link rel="stylesheet" href="Estilos Apis.css">
+
+  </head>
+  <body>
+    <h1>APIs web en acción</h1>
+    <h2>API Web Storage</h2>
+    <p>La API Web Storage proporciona un modo sencillo de almacenar datos en el navegador del usuario de manera persistente. Esta API incluye dos objetos: <code>localStorage</code> y <code>sessionStorage</code>. Estos objetos pueden almacenar pares clave-valor en el navegador del usuario.</p>
+    <p>A continuación, se muestra un ejemplo básico de cómo utilizar la API Web Storage:</p>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <button type="button" onclick="guardarDatos()">Guardar</button>
+    </form>
+    <script src="webstorage.js"></script>
+
+    <h2>API Forms</h2>
+    <p>La API Forms proporciona un modo sencillo de trabajar con los formularios HTML. Esta API incluye objetos y eventos que permiten acceder y manipular los datos de los formularios.</p>
+    <p>A continuación, se muestra un ejemplo básico de cómo utilizar la API Forms:</p>
+    <form onsubmit="return validarFormulario()">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+    <script src="forms.js"></script>
+
+    <h2>API Web Worker</h2>
+    <p>La API Web Worker proporciona un modo sencillo de ejecutar procesos en segundo plano en JavaScript. Esta API permite que los scripts se ejecuten en un hilo separado del hilo principal, lo que puede mejorar el rendimiento de la aplicación.</p>
+    <p>A continuación, se muestra un ejemplo básico de cómo utilizar la API Web Worker:</p>
+    <button type="button" onclick="iniciarWorker()">Iniciar Worker</button>
+    <script src="worker.js"></script>
+
+    <h2>API Fetch</h2>
+    <p>La API Fetch proporciona un modo sencillo de realizar solicitudes HTTP en JavaScript. Esta API utiliza promesas y proporciona un modo sencillo de trabajar con la respuesta de la solicitud.</p>
+    <p>A continuación, se muestra un ejemplo básico de cómo utilizar la API Fetch:</p>
+    <button type="button" onclick="obtenerDatos()">Obtener datos</button>
+    <div id="respuesta"></div>
+    <script src="fetch.js"></script>
+
+  </body>
+</html>
