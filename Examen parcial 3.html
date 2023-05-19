@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Examen parcial 3</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #arriba{
+                font-size: 30px;
+                text-align: left;
+                margin-top: 50px;
+            }
+            input[type="text"], button[type="submit"], button[type="button"] {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            margin-bottom: 20px;
+            }
+            input[type="text"]{
+            width: 80%;
+            box-sizing: border-box;
+            }
+            #nombre{
+                font-family:'Courier New', Courier, monospace ;
+            }
+            button[type="submit"], button[type="button"] {
+            background-color: #e100ff;
+            color: #fff;
+            width: 80%;
+            border: none;
+            cursor: pointer;
+            }
+        </style>
+        <script>
+            function enviarfor()
+            {
+
+                if()
+                    alert('Felicidades, tienes descuento');
+                    
+                else
+                    alert('Este mes no es tu cumpleaños');
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="arriba">Obten un descuento extra!</h1><br><br><br>
+        <form onsubmit="enviarfor()">
+            <label id="nombre" for="nombre">Tu nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" title="Nombre de usuario" placeholder="Nombre de usuario"><br><br>
+
+            <label id="fecha" for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fechan" id="fechan" placeholder="Fecha de nacimiento"/></br><br/>
+            <button type="submit">Enviar formulario.</button>
+
+          </form>
+    </body>
+</html>
