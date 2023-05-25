@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>GeekDOM</title>
+
+        <link href="community.css" rel="stylesheet" type="text/css">
+
+        <style>
+            a:link{color: rgb(255, 255, 255);}
+            a:visited{color: rgb(255, 255, 255);}
+            a:focus{color: rgb(255, 255, 255);}
+            a:hover{color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);}
+            a:active{color: rgb(255, 255, 255);}
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cherry+Bomb+One&family=Dancing+Script&family=Josefin+Sans&family=Rubik+Bubbles&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="sup.ico">
+        
+    </head>
+
+    <body>
+        <div class="fondo_superior"></div>
+
+        <div class="fondo_izquierdo"></div>
+
+        <div class="fondo_derecho"></div>
+
+        <div class="fondo_inferior"></div>
+
+        <div class="contenido_logo">
+            <a href="WSP.html"><img src="logo.png" alt="Logo_GeekDOM" class="logo"></a>
+        </div>
+
+        <div class="contenido_menu">
+            <a href="WSP.html"><header class="title">GeekDOM</header></a>
+
+            <nav class="paginas">
+                <ul type="none">
+                    <li class="home"><a href="WSP.html" target="_self" style="text-decoration: none;">HOME</a></li>
+                    <li class="news"><a href="news.html" target="_self" style="text-decoration: none;">NEWS</a></li>
+                    <li class="community"><a href="community.html" target="_self" style="text-decoration: none;">COMMUNITY</a></li>
+                    <li class="recommendations"><a href="recommendations.html" target="_self" style="text-decoration: none;">RECOMMENDATIONS</a></li>
+                    <li class="help"><a href="help.html" target="_self" style="text-decoration: none;">HELP</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="contenido_informacion">
+            <h1 class="base">BE PART OF THIS COMMUNITY</h1>
+
+            <h1 class="comme">COMMENT BOX</h1>
+            <div id="comentarios-container"></div>
+            <h3 class="tell">Tell Us Something:</h3>
+            <form id="comentario-form">
+                <label for="nombre" class="name">Nombre:</label>
+                <input type="text" id="nombre" required><br>
+                <label for="comentario" class="comment">Comentario:</label>
+                <textarea id="comentario" required></textarea><br>
+                <div class="mandar">
+                    <button type="submit" >Enviar</button>
+                </div>
+            </form>
+            
+            
+            <div class="borrar">
+                <button id="limpiar-comentarios" >Clean</button>
+            </div>
+            
+            
+
+            <script src="community.js"></script>
+
+        </div>
+
+        <script type="text/javascript" src="WSP.js"></script>
+
+        <div class="contenido_columna">
+            <aside class="columna">
+                <center>
+                    <div id="reproductorBox"></div>
+                    <select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+                        <option value="music/freedom.mp3"> Freedom - Pharrell Williams </option>
+                        <option value="music/god.mp3"> God's Plan - Drake </option>
+                        <option value="music/sunflower.mp3"> Sunflower - Post Malone </option>
+                        <option value="music/run.mp3"> Run - OneRepublic </option>
+                        <option value="music/weird.mp3"> Weird Vibes - Limón Limón </option>
+                        <option value="music/time.mp3"> Time Moves Slow - BADBADNOTGOOD </option>
+                        <option value="music/stay.mp3"> Stay - Cheat Codes </option>
+                        <option value="music/she.mp3"> She Said No - BoyWithUke </option>
+                        <option value="music/are.mp3"> Are We Having Fun Yet? - Larkins </option>
+                        <option value="music/you.mp3"> You Do You - Zayde Wolf </option>
+
+                    </select>
+                    
+                    <script>cargarReproductor();</script>
+                </center>
+            </aside>
+        </div>
+
+        <div class="contenido_inferior">
+            <footer>Derechos Reservados &copy;2023-2033</footer>
+
+            <font class="rika">RIKA</font>
+            <font class="carlos">CARLOS</font>
+
+            <a href="https://www.instagram.com/r1k4_13/#" target="_blank"><img src="https://acortar.link/EpboVk" alt="instagram" class="insta" style="left: 8%;"></a>
+            <a href="https://www.instagram.com/carloosjuarez/" target="_blank"><img src="https://acortar.link/EpboVk" alt="instagram" class="insta" style="left: 40.5%;"></a>
+
+            <a href="" target="_blank"><img src="https://acortar.link/KwT4TF" alt="instagram" class="face" style="left: 8%;"></a>
+            <a href="" target="_blank"><img src="https://acortar.link/KwT4TF" alt="instagram" class="face" style="left: 40.5%;"></a>
+
+            <a href="" target="_blank"><img src="https://acortar.link/xY9xIu" alt="instagram" class="twitter" style="left: 8%;"></a>
+            <a href="" target="_blank"><img src="https://acortar.link/xY9xIu" alt="instagram" class="twitter" style="left: 40.5%;"></a>
+
+        </div>
+    </body>
+
+</html>
